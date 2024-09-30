@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>button</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .video {
+        width: 800px;
+        height: 450px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url(https://images.pexels.com/photos/697244/pexels-photo-697244.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .play-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ffbd50;
+        color: #fff;
+        font-size: 50px;
+        height: 70px;
+        width: 70px;
+        z-index: 2;
+        border-radius: 100%;
+        position: relative;
+      }
+      .play-btn:before {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 4.75rem;
+        height: 4.75rem;
+        border-radius: 50%;
+        background: #ffbd50;
+
+        animation: bloom1 1500ms ease-out infinite;
+      }
+
+      @keyframes bloom1 {
+        0% {
+          transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+          opacity: 1;
+        }
+        100% {
+          transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="video-section" id="video-section">
+      <div class="main-container">
+        <h1>Course Video Presentation</h1>
+        <div class="video">
+          <div class="play-btn">
+            <ion-icon name="play"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

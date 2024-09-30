@@ -1,0 +1,23 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: red;
+    z-index: 100;
+
+   
+
+  }
+
+ 
+  /* section {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f242d;
+    color: #fff;
+    font-weight: 700;
+  } */
+ 
